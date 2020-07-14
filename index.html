@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h3>Hello World</h3>
+    <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+        <div slot="email">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, deleniti.</div>
+        <div slot="phone">Lorem, ipsum.</div>
+    </user-card>
+    <user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/men/2.jpg">
+        <div slot="email">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, deleniti.</div>
+        <div slot="phone">Lorem, ipsum.</div>
+    </user-card>
+    <user-card name="Dudu Doe" avatar="https://randomuser.me/api/portraits/men/3.jpg">
+        <div slot="email">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, deleniti.</div>
+        <div slot="phone">Lorem, ipsum.</div>
+    </user-card>
+
+    <template>
+        <style>
+            h3 {
+                color: coral
+            }
+        </style>
+
+        <div class="user-card">
+            <div>
+                <img src="" alt="">
+                <h3></h3>
+                <div class="info">
+                    <p><slot name="email"></slot></p>
+                    <p><slot name="phone"></slot></p>
+                </div>
+                <button>Hide info</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="userCard.js"></script>
+</body>
+</html>
